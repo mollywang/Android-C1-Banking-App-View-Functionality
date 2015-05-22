@@ -18,6 +18,7 @@ import com.mollywang.c1_hack_android.com.sliding.tabs.SlidingTabLayout;
  */
 public class BudgetFragment extends Fragment {
 
+    private int counter = 0;
 
     private String[] mMonthTitles = {
             "Jan 2015",

@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background_floating_material_dark"
     tools:context="com.mollywang.c1_hack_android.MonthDetailFragment">
 
 
@@ -18,13 +17,450 @@
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enter"
+        android:layout_height="35dp"
+        android:text="set range"
         android:id="@+id/enterButton"
-        android:layout_gravity="right|top"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
         android:nestedScrollingEnabled="false"
-        android:onClick="onEnterClick" />
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/companyTitle"
+            android:id="@+id/companyTitle"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/totalExpensesTitle"
+            android:id="@+id/totalExpenseTitle"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="7dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/janView">
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Amazon.com                     $813.24"
+                android:id="@+id/entry1"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Starbucks                           $453.75"
+                android:id="@+id/entry2"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Uber                                     $303.10"
+                android:id="@+id/entry3"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="CVS                                      $256.15"
+                android:id="@+id/entry4"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Venmo                                $240.52"
+                android:id="@+id/entry5"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Jamba Juice                     $173.50"
+                android:id="@+id/entry6"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="F21                                       $124.39"
+                android:id="@+id/entry7"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Penn Bookstore                $100.14"
+                android:id="@+id/entry8"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="RevolveClothing.com      $78.32"
+                android:id="@+id/entry9"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/mayView">
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Starbucks                           $160.00"
+                android:id="@+id/entry51"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Uber                                     $275.00"
+                android:id="@+id/entry52"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Chipotle                              $171.50"
+                android:id="@+id/entry53"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="CVS                                      $156.50"
+                android:id="@+id/entry54"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Sports' Authority              $149.50"
+                android:id="@+id/entry55"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Jamba Juice                     $127.00"
+                android:id="@+id/entry56"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Safeway                              $120.50"
+                android:id="@+id/entry57"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Whole Foods                     $120.00"
+                android:id="@+id/entry58"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="The Melt                             $119.40"
+                android:id="@+id/entry59"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/marView">
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Walgreens                          $80.00"
+                android:id="@+id/entry31"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Starbucks                           $61.50"
+                android:id="@+id/entry32"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Chipotle                              $40.70"
+                android:id="@+id/entry33"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Venmo                                $30.00"
+                android:id="@+id/entry34"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Sliver's Pizzeria                $19.00"
+                android:id="@+id/entry35"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="The Melt                             $15.00"
+                android:id="@+id/entry36"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Uber                                     $14.00"
+                android:id="@+id/entry37"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Bart                                      $8.50"
+                android:id="@+id/entry38"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="AMC Theatres                   $8.50"
+                android:id="@+id/entry39"
+
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:paddingLeft="35dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
 
 </LinearLayout>

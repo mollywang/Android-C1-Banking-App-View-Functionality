@@ -40,10 +40,10 @@ import java.math.BigDecimal;
  */
 public class RangeSeekBar<T extends Number> extends ImageView {
 
-    public static final Integer DEFAULT_MINIMUM = 0;
-    public static final Integer DEFAULT_MAXIMUM = 100;
+    public static final Integer DEFAULT_MINIMUM = 1;
+    public static final Integer DEFAULT_MAXIMUM = 31;
     public static final int HEIGHT_IN_DP = 30;
-    public static final int TEXT_LATERAL_PADDING_IN_DP = 3;
+    public static final int TEXT_LATERAL_PADDING_IN_DP = 3; //originally 3
     private static final int INITIAL_PADDING_IN_DP = 8;
     private final int LINE_HEIGHT_IN_DP = 1;
     private final Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -446,7 +446,8 @@ public class RangeSeekBar<T extends Number> extends ImageView {
         paint.setAntiAlias(true);
 
         // draw min and max labels
-        String minLabel = getContext().getString(R.string.demo_min_label);
+        //String minLabel = getContext().getString(R.string.demo_min_label);
+        String minLabel = "  Start";
         String maxLabel = getContext().getString(R.string.demo_max_label);
         float minMaxLabelSize = Math.max(paint.measureText(minLabel), paint.measureText(maxLabel));
         float minMaxHeight = mTextOffset + thumbHalfHeight + mTextSize / 3;
@@ -486,7 +487,7 @@ public class RangeSeekBar<T extends Number> extends ImageView {
         // draw the text if sliders have moved from default edges
         if (!selectedValuesAreDefault) {
             paint.setTextSize(mTextSize);
-            paint.setColor(Color.WHITE);
+            paint.setColor(Color.GRAY);
             // give text a bit more space here so it doesn't get cut off
             int offset = PixelUtil.dpToPx(getContext(), TEXT_LATERAL_PADDING_IN_DP);
 

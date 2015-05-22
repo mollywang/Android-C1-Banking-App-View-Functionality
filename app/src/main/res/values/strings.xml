@@ -1,16 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Transactions</string>
-    <string name="title_section1">Overview</string>
-    <string name="title_section2">Budget</string>
-    <string name="title_section3">Section 3</string>
+    <string name="app_name">Capital TWO</string>
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Activity</string>
+    <string name="title_section3">Accounts</string>
+    <string name="title_section4">Transfer</string>
+    <string name="title_section5">Contact</string>
+    <string name="title_section6">Profile</string>
+    <string name="title_section7">About</string>
+    <string name="title_section8">Logout</string>
+    <string name="listing_detail">Transaction Details</string>
+
+
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="action_example">Example action</string>
+    <string name="action_example">Help</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="demo_min_label">Start</string>
     <string name="demo_max_label">End</string>
+    <string name="title_activity_jan_view">JanView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_feb_view">FebView</string>
+    <string name="title_activity_mar_view">MarView</string>
+    <string name="title_activity_april_view">AprilView</string>
+    <string name="title_activity_may_view">MayView</string>
+    <string name="title_activity_june_view">JuneView</string>
+    <string name="title_activity_july_view">JulyView</string>
+    <string name="title_activity_aug_view">AugView</string>
+    <string name="title_activity_dummy_jan_listing_detail">Transaction Details</string>
+
+    <string name="companyTitle"><u>Company</u></string>
+    <string name="totalExpensesTitle"><u>Total Expenses</u></string>
+    <string name="dateTitle"><u>Date</u></string>
+    <string name="amount"><u>Amount</u></string>
+
+
 
 </resources>

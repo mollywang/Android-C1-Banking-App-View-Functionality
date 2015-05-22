@@ -5,8 +5,6 @@
     android:orientation="vertical"
     tools:context="com.mollywang.c1_hack_android.BudgetFragment">
 
-    //PUT BUTTONS UP HERE
-
     <com.mollywang.c1_hack_android.com.sliding.tabs.SlidingTabLayout
         android:id="@+id/sliding_tabs"
         android:layout_width="match_parent"
